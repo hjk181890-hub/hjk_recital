@@ -1,0 +1,318 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>김하정 석사 졸업 학위 리사이틀 — 프로그램노트</title><style>
+:root{--bg:#0D0B0E;--mint:#D3EBD8;--lav:#D9C8F5;--lav2:#B9A4E6;--ink:#ECE8F0;--mute:#9D98A6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg) url(bg1.png) center/cover fixed;color:var(--ink);font-family:"Noto Serif CJK KR","Lora",serif;line-height:1.75;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pbg{display:none}
+.wrap{max-width:720px;margin:0 auto;padding:40px 22px 80px}
+.cover{text-align:center;padding:60px 0 50px;border-bottom:1px solid rgba(217,200,245,.3);margin-bottom:40px}
+.cover .sop{font-size:11px;letter-spacing:.4em;color:var(--mute)}
+.cover .rc{font-family:"Lora",serif;font-style:italic;font-size:30px;background:linear-gradient(100deg,var(--mint),var(--lav),var(--lav2));-webkit-background-clip:text;background-clip:text;color:transparent;margin:6px 0}
+.cover .kr{font-size:14px;letter-spacing:.1em}
+.cover .pn{font-size:12px;letter-spacing:.35em;color:var(--mint);margin-top:28px}
+.cover .inf{font-size:12px;color:var(--mute);margin-top:14px;line-height:1.9}
+h1{font-family:"Lora",serif;font-size:13px;letter-spacing:.35em;text-transform:uppercase;color:var(--mint);font-weight:400;margin:48px 0 6px;padding-bottom:8px;border-bottom:1px solid rgba(211,235,216,.35)}
+h1::after{content:"";display:block}
+.prog h1{margin-top:0}
+section.comp{margin-top:56px;padding-top:28px;border-top:1px solid rgba(217,200,245,.3)}
+h2{font-size:15px;font-weight:700;color:var(--ink);letter-spacing:.04em;text-align:center}
+.work{font-family:"Lora","Noto Serif CJK KR",serif;font-style:italic;font-size:21px;text-align:center;background:linear-gradient(100deg,var(--mint),var(--lav));-webkit-background-clip:text;background-clip:text;color:transparent;margin:4px 0 10px}
+.meta{font-size:12px;color:var(--mute);text-align:center;line-height:1.7}
+.meta + p, .work + p, h2 + p{margin-top:18px}
+h3{font-size:13.5px;color:var(--lav);margin:26px 0 8px;letter-spacing:.05em}
+p{font-size:14px;text-align:justify;text-indent:2ch;margin-bottom:12px;word-break:keep-all}
+p.li{text-indent:-18px}
+p.li{padding-left:18px;color:var(--ink)}
+p.li::before{content:"▷ ";color:var(--mint)}
+article.piece{margin-top:40px;padding:26px 0 8px;border-top:1px dashed rgba(217,200,245,.3)}
+.ph{font-size:11px;letter-spacing:.2em;color:var(--mute);text-align:center}
+.pt{font-size:16px;font-weight:700;text-align:center;color:var(--lav);margin-top:4px}
+.pm{font-size:11.5px;text-align:center;color:var(--mute)}
+.ot{font-family:"Lora",serif;font-style:italic;font-size:18px;text-align:center;color:var(--mint);margin-top:14px}
+.ok{font-size:12.5px;text-align:center;color:var(--mute);margin-bottom:16px}
+.lyr{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0 10px;padding:18px 0;border-top:1px solid rgba(211,235,216,.25);border-bottom:1px solid rgba(211,235,216,.25);font-size:12.5px;line-height:1.8}
+.lyr .o{font-family:"Lora",serif;font-style:italic;color:var(--lav)}
+.lyr .k{color:var(--ink)}
+@media(max-width:560px){.lyr{grid-template-columns:1fr}.lyr .k{border-top:1px dashed rgba(217,200,245,.25);padding-top:14px}}
+/* program block */
+.prog .top{display:flex;justify-content:space-between;font-size:11px;color:var(--mute);margin:10px 0 4px}
+.prog .c{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;gap:12px}
+.prog .c .n{font-family:"Lora",serif;font-weight:700;font-size:15px;letter-spacing:.06em}
+.prog .c .w{font-family:"Lora",serif;font-style:italic;color:var(--lav);font-size:13px;text-align:right;line-height:1.3}
+.prog .c .w small{font-style:normal;font-size:11px;color:var(--mute);font-family:"Noto Serif CJK KR",serif}
+.prog .t{padding-left:16px;font-size:13.5px;line-height:1.5;margin-top:3px}
+.prog .t span{color:var(--mute);font-size:11.5px}
+.prog .k{color:var(--mute);font-size:11.5px;padding-left:12px}
+.prog .im{text-align:center;color:var(--mint);letter-spacing:.3em;font-size:11px;margin:18px 0 4px}
+footer{margin-top:60px;padding-top:20px;border-top:1px solid rgba(217,200,245,.3);font-size:11px;color:var(--mute);text-align:center;line-height:1.8}
+@media print{
+ @page{size:148mm 210mm;margin:0}
+
+ body{background:var(--bg)}
+ .pbg{position:fixed;left:0;top:0;width:149mm;height:211mm;background:url(bg1.png) center/cover;z-index:-1}
+ .lyr{grid-template-columns:1fr 1fr}.lyr .k{border-top:0;padding-top:0}
+ .wrap{max-width:none;padding:14mm 12mm}.pbg{display:block}
+ p{font-size:9.5pt;text-align:justify}.lyr{font-size:8.5pt}
+ article.piece{break-inside:auto}.lyr{break-inside:avoid}
+ section.comp{break-before:page;border-top:0;padding-top:0;margin-top:0}
+ .cover{height:170mm;display:flex;flex-direction:column;justify-content:center;border:0;break-after:page}
+}
+</style></head><body><div class="pbg"></div><div class="wrap">
+<div class="cover"><div class="sop">SOPRANO</div><div class="rc">HA-JEONG KIM RECITAL</div><div class="kr">김하정 석사 졸업 학위 리사이틀</div>
+<div class="pn">PROGRAM NOTES · 프로그램 노트</div>
+<div class="inf">2026년 12월 15일(화) 오후 7시 · 국립창원대학교 율림홀<br>사사 유주연 · 반주 구현수 · 플루트 오시헌</div></div>
+<section class="prog">
+<h1>Program</h1>
+<div class="top"><span>Soprano 김하정</span><span>Acc. 구현수</span></div>
+<div class="c"><span class="n">J.-B. Lully</span><span class="w">Psyché<br><small>프시케</small></span></div>
+<div class="t">Pourquoi du ciel m'obliger à descendre <span>(Prologue, Vénus)</span><div class="k">어찌하여 하늘은 나를 내려오게 하는가</div></div>
+<div class="t">Si je fais vanité de ma tendresse extrême <span>(Acte V, scène 1, Psyché)</span><div class="k">내 극진한 사랑을 자랑한다 한들</div></div>
+<div class="c"><span class="n">M. Ravel</span><span class="w">Shéhérazade<br><small>셰헤라자드</small></span></div>
+<div class="t">Ⅰ. Asie <span>아시아</span></div>
+<div class="t">Ⅱ. La flûte enchantée <span>마법의 피리 (Fl. 오시헌)</span></div>
+<div class="t">Ⅲ. L'indifférent <span>무관심한 이</span></div>
+<div class="c"><span class="n">W. A. Mozart</span><span class="w">Die Entführung aus dem Serail<br><small>후궁으로부터의 도주</small></span></div>
+<div class="t">Ach, ich liebte, war so glücklich <span>(1. Aufzug, Nr. 6, Konstanze)</span><div class="k">아, 나는 사랑했고 그토록 행복했네</div></div>
+<div class="im">— INTERMISSION —</div>
+<div class="c"><span class="n">P. Mascagni</span><span class="w">Tre romanze (G. Menasci)<br><small>세 로만차</small></span></div>
+<div class="t">Ascoltiamo! <span>들어 보자! (1904)</span></div>
+<div class="t">Stornelli marini <span>바다의 스토르넬리 (1904)</span></div>
+<div class="t">Spes ultima <span>마지막 희망 (1906)</span></div>
+<div class="c"><span class="n">F. Cilea</span><span class="w">Adriana Lecouvreur<br><small>아드리아나 르쿠브뢰르</small></span></div>
+<div class="t">Ecco, respiro appena… Io son l'umile ancella <span>(Atto I, Adriana)</span><div class="k">보세요, 이제 겨우 숨을 고릅니다… 나는 창조하는 정신의 비천한 시녀</div></div>
+<div class="c"><span class="n">N. Rorem</span><span class="w">Five Songs (1948–1979)<br><small>다섯 가곡</small></span></div>
+<div class="t">I will always love you <span>나는 그대를 영원히 사랑하리 (F. O'Hara, 1957)</span></div>
+<div class="t">Little Elegy <span>작은 비가(悲歌) (E. Wylie, 1948)</span></div>
+<div class="t">What if some little pain… <span>어떤 작은 고통이 있다 한들 (E. Spenser, 1949)</span></div>
+<div class="t">O Do Not Love Too Long <span>오, 너무 오래 사랑하지 말아요 (W. B. Yeats, 1951)</span></div>
+<div class="t">Ferry me across the water <span>물 건너로 나를 실어다 주오 (C. Rossetti, 1978–79, <i>The Nantucket Songs</i> 중)</span></div>
+<div class="c"><span class="n">J. Strauss II</span><span class="w">Die Fledermaus<br><small>박쥐</small></span></div>
+<div class="t">Csárdás «Klänge der Heimat» <span>차르다시 「고향의 음향」 (2. Akt, Nr. 10, Rosalinde)</span></div>
+</section>
+<section class="essay"><h1>프로그램에 부쳐</h1>
+<p>오늘 무대에 오르는 일곱 작곡가의 열여섯 곡은 약 300년의 시간을 가로지릅니다. 17세기 후반 파리 궁정의 비극 오페라에서 시작하여 20세기 후반 미국의 예술가곡까지, 그 사이에 빈의 모차르트, 파리의 라벨, 토스카나의 마스카니, 밀라노의 칠레아가 있습니다. 마지막은 빈의 오페레타 작곡가 요한 슈트라우스 2세의 차르다시로 닫힙니다.</p>
+<p>이 곡들을 하나의 무대에 묶는 주제는 「갇혀 있지만 굴하지 않는 여성의 목소리」입니다. 여신의 복수에 갇힌 프시케, 투르크 궁정에 감금된 콘스탄체, 사랑의 좌절 속에 놓인 셰헤라자드의 화자, 위조된 정체 속에서 고향을 노래하는 로잘린데 — 각 인물은 서로 다른 「갇힘」 안에서 자기 목소리를 지킵니다. 관객은 한 명의 가창자가 베누스·프시케·콘스탄체·아드리아나·로잘린데로 옮겨 가는 과정을 듣게 됩니다.</p>
+<h3>Ⅰ부 — 17세기에서 18세기로</h3>
+<p>1부는 륄리의 《프시케》(1678)로 시작합니다. 여신 베누스가 인간 처녀 프시케에게 품은 질투와 복수의 이야기. 프롤로그에서 베누스가 분노를 발화하고, 5막에서 프시케가 금기의 상자를 열며 자기 사랑을 응시합니다. 한 명의 가창자가 베누스와 프시케 두 인물을 차례로 부르며, 프랑스 비극 오페라의 가장 격렬한 정념을 보여줍니다.</p>
+<p>그 뒤를 잇는 라벨의 《셰헤라자드》(1903)는 약 17분에 걸친 3곡의 노래 사이클입니다. 천일야화의 이야기꾼을 빌렸지만, 정작 그려지는 것은 「파리의 시인이 상상한 동방」 — 다마스쿠스의 거리에서, 잠든 주인 옆에서 듣는 피리 소리에서, 문턱을 스쳐 지나가는 젊은 이방인의 우아한 인사에서. 17세기 비극의 격렬한 정념이 200년 뒤 라벨에 이르러 얼마나 섬세한 환영으로 변했는지가 들립니다.</p>
+<p>1부는 모차르트의 《후궁으로부터의 도주》(1782) 중 콘스탄체의 아리아로 마무리됩니다. 스페인 귀족 처녀가 투르크의 후궁에 갇혀 약혼자에 대한 정절을 노래합니다. 사랑의 행복(과거)과 이별의 슬픔(현재)이 한 가창자의 한 호흡 안에 함께 들어 있는 곡으로, 1부의 정념적 봉인입니다.</p>
+<h3>Ⅱ부 — 19세기 말에서 20세기 중반으로</h3>
+<p>2부는 마스카니의 세 살롱 가곡(1904–1906)으로 열립니다. 마스카니는 《카발레리아 루스티카나》로 유명한 베리스모 작곡가이지만, 이 세 곡에서는 오페라의 격렬한 폭발 대신 살롱의 친밀한 어법을 보여줍니다 — 부드러운 사랑의 청취, 바다와 환영의 미소, 그리고 「마지막 희망」이라는 라틴 격언의 영적 봉헌. 잘 알려지지 않은 보석들입니다.</p>
+<p>칠레아의 《아드리아나 르쿠브뢰르》(1902)의 등장 아리아는 18세기 프랑스의 실존 여배우 아드리아나가 동료들의 찬사 앞에서 「저는 다만 창조의 정신을 섬기는 비천한 시녀일 뿐」이라며 자기를 낮추는 곡입니다. 어쩌면 이 무대에서 가장 메타적인 순간 — 오늘의 가창자가 300년의 음악사를 자기 목소리에 담는 행위에 대한 음악적 응답이기도 합니다.</p>
+<p>이어지는 Rorem의 다섯 곡(1948–1979)은 마스카니의 《세 가곡》과 양식적 평행을 이루는 또 하나의 편찬적 묶음입니다. 16세기 영국 르네상스 시인 Edmund Spenser부터 19세기 영국 여성 시인 Christina Rossetti, 아일랜드의 W. B. Yeats, 20세기 초 미국 여성 시인 Elinor Wylie, 그리고 20세기 중반 미국 시인 Frank O&#x27;Hara에 이르기까지 약 360년의 영시가, 한 명의 미국 작곡가 Ned Rorem의 청년기 4곡과 후기 1곡으로 결합됩니다. 「역설적 고백 → 짧은 비가 → 안식의 갈망 → 유한성의 경고 → 도하의 봉인」으로 이어지는 곡선이며, 중간의 《What if some little pain…》이 본 프로그램의 라멘트 계열에 응답하는 안식의 노래로 놓입니다.</p>
+<p>마지막 곡은 슈트라우스의 《박쥐》(1874) — 가장 유명한 빈 오페레타의 차르다시입니다. 빈 부르주아 부인 로잘린데가 「헝가리 백작부인」으로 변장하고 등장하여, 「내가 진짜 헝가리인임을 차르다시로 증명하겠다」며 노래합니다. 헝가리 민요의 향수와 환희가 극장적 거짓의 액자 안에서 한 번 더 봉인되며 끝납니다 — 오늘의 모든 정념을 패러디로 닫는 결말입니다.</p>
+<p>관객 여러분께서는 한 가창자의 목소리를 따라, 약 300년의 여성 정념사를 한 호흡에 들으시게 됩니다.</p>
+</section>
+<section class="comp"><h2>장-바티스트 륄리 (Jean-Baptiste Lully, 1632–1687)</h2>
+<div class="work">《프시케》 Psyché, LWV 56 (1678)</div>
+<div class="meta">프랑스 비극 오페라 (Tragédie lyrique) · 프롤로그와 5막</div>
+<div class="meta">대본: 토마 코르네유 &amp; 베르나르 르 부비에 드 퐁트넬</div>
+<div class="meta">원전: 아풀레이우스 《황금 당나귀》 — 「쿠피도와 프시케」 신화</div>
+<div class="meta">초연: 1678년 4월 19일, 파리 팔레-루아얄 극장</div>
+<p>《프시케》는 「태양왕」 루이 14세의 음악 감독이었던 륄리가 작곡한 여섯 번째 비극 오페라입니다. 본래 1671년 몰리에르가 만든 발레-희곡을 위해 작곡되었던 음악을 재사용하여 단 3주 만에 완성한 작품입니다.</p>
+<p>이야기는 2세기 로마 작가 아풀레이우스의 소설 《황금 당나귀》에 실린 「쿠피도와 프시케」에서 가져왔습니다. 미의 여신 베누스(아프로디테)는 인간 처녀 프시케가 자기 미모를 능가한다는 칭송을 받자 격분합니다. 베누스는 아들 아무르(쿠피도)에게 프시케를 가장 비천한 남자와 사랑에 빠지게 만들라고 명령하지만, 정작 아무르 자신이 프시케를 사랑하게 되어 그녀를 비밀 궁전에 숨깁니다. 프시케는 금기를 어겨 아무르를 잃고, 베누스의 시련을 견디며 지옥까지 다녀와야 합니다. 5막에서 프시케는 지옥에서 가져온 상자를 열어 의식을 잃습니다. 결국 신들의 왕 유피테르가 중재하여 프시케는 불멸의 신성을 얻고 아무르와 결합합니다.</p>
+<p>이 작품에서 가장 인상적인 인물은 베누스입니다. 「사랑의 여신」이라는 통상적 이미지와 달리, 대본 속 베누스는 질투와 복수에 사로잡힌 인물로 그려집니다. 오늘 무대에서는 한 명의 가창자가 베누스의 분노(프롤로그)와 프시케의 자기응시(5막 1장)를 차례로 부르며, 작품 전체의 정념적 아치를 한 호흡에 보여드립니다.</p>
+<div class="meta">오늘 발췌하는 2곡 — 프롤로그 베누스, 5막 1장 프시케 — 는 함께 약 6분 10초의 한 단위로 진행됩니다. 프시케의 실신으로 무대가 봉인되고, 이어지는 라벨의 동방 환상으로 자연스럽게 연결됩니다.</div>
+<article class="piece"><div class="ph">륄리 — 《프시케》(1678)</div>
+<div class="pt">프롤로그 2-3장 · 베누스</div>
+<div class="pm">프랑스어 · 약 3분 30초</div>
+<div class="ot">«Pourquoi du ciel m&#x27;obliger à descendre?»<br>«Mon fils, si tu plains mes malheurs»</div>
+<p>오페라의 프롤로그. 평화의 신들이 지상에 축복을 기원하는 자리에 베누스가 강림합니다. 그러나 그녀는 축복을 내리러 온 것이 아닙니다 — 인간들이 프시케를 숭배한 이래 자신의 제단이 비었다는 굴욕에 분노하고 있습니다.</p>
+<p>베누스는 「왜 내가 굳이 하늘에서 내려와야만 하는가?」라는 의문문으로 곡을 엽니다. 곧 그녀는 자신의 아들 아무르(쿠피도)를 호명해 명령을 내립니다 — 「한 미녀가 일찍이 한탄해본 적 없을 만큼 가장 비천한 남편을 프시케에게 안기거라」.</p>
+<p>비극의 모든 사건이 이 한 발화로부터 시작됩니다. 륄리의 음악은 장식을 아끼고 프랑스어 낭송의 명료함을 앞세웁니다. 화려한 기교 대신 말의 억양 자체가 여신의 격노를 실어 나릅니다.</p>
+<div class="lyr"><div class="o">Pourquoi du ciel m&#x27;obliger à descendre?<br>Mon mérite en ces lieux n&#x27;a plus rien à prétendre:<br>En vain vous m&#x27;y rendez ces honneurs solennels:<br>Le mépris est mon seul partage,<br>Et depuis qu&#x27;à Psyché les aveugles mortels<br>De leurs voix adressent l&#x27;hommage,<br>Vénus demeure sans autels.<br>Dans une si honteuse offense,<br>Laissez-moi sans témoins résoudre ma vengeance.<br><br>Mon fils, si tu plains mes malheurs,<br>Fais-moi voir que tu m&#x27;es fidèle.<br>Tu sais combien Psyché me dérobe d&#x27;honneurs;<br>Elle est mon ennemie, il faut me venger d&#x27;elle.<br>Pour servir mon juste courroux,<br>Prends de tes traits les plus à craindre;<br>Un trait qui la puisse contraindre<br>De se donner au plus indigne époux,<br>Dont jamais une belle ait eu lieu de se plaindre.<br>Cours, vole, et par de prompts effets<br>Montre que tu prends part aux affronts qu&#x27;on m&#x27;a faits.</div><div class="k">어찌하여 하늘은 나로 하여금 내려오게 만드는가?<br>이 장소에 내 영예는 더 이상 주장할 것이 없다.<br>그대들이 헛되이 이곳에서 나에게 이 의례적 영예를 바친다 —<br>경멸만이 내 유일한 몫이다.<br>눈먼 인간들이 프시케에게<br>그들의 목소리로 경배를 보낸 이래로,<br>베누스는 제단 없이 남아 있다.<br>이토록 수치스러운 모욕 속에서,<br>증인 없이 내가 복수를 결행하도록 두라.<br><br>내 아들이여, 그대가 내 불행을 가엾이 여긴다면,<br>그대가 나에게 충실함을 보여라.<br>프시케가 나의 영예를 얼마나 빼앗는지 그대는 안다.<br>그녀는 내 적이며, 나는 그녀에게 복수해야만 한다.<br>나의 정당한 분노를 만족시키기 위해,<br>그대의 화살 중 가장 두려운 것을 꺼내라 —<br>그녀를 강제할 수 있는 화살,<br>어떤 미녀도 한탄할 자격이 없을 만큼<br>가장 못난 남편에게 자신을 바치도록 만드는 화살을.<br>달려라, 날아라, 그리고 빠른 결과로<br>나에 대한 모욕에 그대가 함께 분노함을 보여라.</div></div>
+</article>
+<article class="piece"><div class="ph">륄리 — 《프시케》(1678)</div>
+<div class="pt">5막 1장 · 프시케</div>
+<div class="pm">프랑스어 · 약 2분 40초</div>
+<div class="ot">«Si je fais vanité de ma tendresse extrême»</div><div class="ok">「내가 나의 극심한 사랑에 자긍심을 가진다면」</div>
+<p>프시케는 베누스의 명령으로 지옥에 내려가, 저승의 여왕 프로세르피나에게서 「미의 상자」를 받아 왔습니다. 아무르에게 다시 사랑스럽게 보이고 싶은 마음에, 그녀는 「열지 말라」는 금기를 어기고 상자를 엽니다. 상자에 든 것은 미가 아니라 저승의 잠 — 이 곡은 실신에 이르기까지 그녀가 부르는 마지막 모놀로그입니다.</p>
+<p>죽음 앞에서 프시케는 자기 사랑을 응시합니다. 「만약 내가 나의 극심한 사랑에 자긍심을 가져도 된다면 — 그 사랑의 깊이가 곧 나의 비극의 깊이이기에」. 슬픔의 호소가 아니라 자기 정념에 대한 조용한 검토입니다.</p>
+<p>베누스의 화려한 분노와는 정반대의 음악 — 가장 친밀하고 절제된 발성으로, 마치 호흡 자체가 음악이 되는 듯한 자유로운 박절로 진행됩니다.</p>
+<div class="lyr"><div class="o">Si je fais vanité de ma tendresse extrême,<br>En puis-je trop avoir quand c&#x27;est de l&#x27;Amour même<br>Que mon cœur s&#x27;est laissé charmer?<br>Je sens que rien ne peut ébranler ma constance.<br>Ah! pourquoi m&#x27;obliger d&#x27;aimer<br>S&#x27;il faut aimer sans espérance?<br>Sans espérance? Non, c&#x27;est offenser l&#x27;Amour,<br>Ce Dieu qui plaint les maux dont je suis poursuivie,<br>Jusques dans les Enfers a pris soin de ma vie;<br>Et c&#x27;est par lui que je reviens au jour.<br><br>Ce sont ici les jardins de sa mère;<br>Peut-être en ce moment il lui parle de moi,<br>Je puis l&#x27;y rencontrer.<br>Pour mériter sa foi,<br>Cherchons jusqu&#x27;au bout à lui plaire.<br>Si mes ennuis ont pu ternir<br>Ces attraits dont l&#x27;éclat m&#x27;a su rendre coupable,<br>Cette boîte me va fournir<br>De quoi paraître encor aimable…<br>Ouvrons!<br><br>Quelles promptes vapeurs<br>Me font des sens perdre l&#x27;usage!<br>Si la mort finit mes malheurs,<br>O toi qui de mes vœux reçois le tendre hommage,<br>Songe qu&#x27;en expirant<br>C&#x27;est pour toi que je meurs.</div><div class="k">내가 나의 극심한 사랑에 자긍심을 가진다면 —<br>그것이 사랑 자신이라면 어찌 그 사랑이 지나칠 수 있겠는가,<br>내 마음이 스스로 매혹되도록 둔 그것이?<br>아무것도 나의 한결같음을 흔들 수 없음을 느낀다.<br>아! 어찌하여 나에게 사랑하기를 강요하는가,<br>희망 없이 사랑해야 한다면?<br>희망 없이? 아니, 그것은 사랑을 모욕하는 것이다.<br>내가 시달리는 고통을 가엾이 여기는 그 신,<br>지옥에까지 내려가 내 생명을 돌봐주신 분 —<br>그를 통해 나는 다시 햇빛으로 돌아왔다.<br><br>이곳이 그의 어머니의 정원이다.<br>어쩌면 이 순간 그가 그녀에게 나에 대해 이야기하고 있을지도.<br>나는 그를 그곳에서 만날 수 있다.<br>그의 신뢰를 받기 위해,<br>끝까지 그를 기쁘게 하려 애써 보자.<br>나의 슬픔이 그의 죄를 부른 그 매력들을 흐리게 했다면,<br>이 상자가 나에게 아직도<br>사랑스럽게 보일 무엇을 줄 것이다…<br>열어보자!<br><br>어떤 빠른 증기들이<br>내 감각을 잃게 만드는가!<br>죽음이 내 불행을 끝낸다면,<br>오 그대, 내 서원의 부드러운 경배를 받는 자여,<br>숨을 거두며 생각해다오 —<br>내가 그대를 위해 죽는다는 것을.</div></div>
+</article>
+</section>
+<section class="comp"><h2>모리스 라벨 (Maurice Ravel, 1875–1937)</h2>
+<div class="work">《셰헤라자드》 Shéhérazade (1903)</div>
+<div class="meta">가곡 사이클 (3곡) · 메조소프라노/소프라노와 관현악(또는 피아노)</div>
+<div class="meta">시: 트리스탕 클랭소르 (Tristan Klingsor, 1874–1966)</div>
+<div class="meta">초연: 1904년 5월 17일, 파리 살 뒤 누보 테아트르</div>
+<p>《셰헤라자드》는 라벨이 28세에 작곡한 첫 본격 성악 사이클입니다. 천일야화의 이야기꾼 셰헤라자드의 이름을 빌렸지만, 정작 동방을 그리는 것은 19세기 말 파리의 보헤미안 시인 클랭소르 — 즉 동방을 직접 경험한 자의 보고가 아니라 「파리의 시인이 상상한 동방」입니다. 라벨이 속한 「압인파(les Apaches)」의 동료들이 함께 만들어낸 동방 환상의 결정체이기도 합니다.</p>
+<p>음악적으로 본 사이클은 드뷔시의 《펠레아스와 멜리장드》(1902) 직후, 라벨이 자기 어법으로 분기해 가는 결정적 순간을 보여줍니다. 섬세한 화성과 색채로 동방의 거리감과 욕망의 모호함을 그려낸 가장 우아한 인상주의 가곡 중 하나입니다.</p>
+<p>세 곡은 각각 다른 형태의 동방 환영을 노래합니다.</p>
+<p class="li">I. 아시아 — 「보고 싶다」를 거듭하며 펼치는 동방 환상. 다마스쿠스에서 중국까지, 미녀와 살인자, 장미와 피의 풍경을 잇달아 응시합니다. 사이클 중 가장 긴 곡(약 9분 30초).</p>
+<p class="li">II. 마법의 피리 — 주인이 잠든 밤, 노예 소녀가 바깥에서 들려오는 연인의 피리 소리에 귀를 기울입니다. 매우 내밀하고 정적인 곡.</p>
+<p class="li">III. 무관심한 자 — 화자의 문턱에서 노래하는 젊은 이방인. 그를 안으로 들이려 하지만, 그는 우아한 몸짓 한 번을 남기고 지나가 버립니다. 욕망의 좌절을 봉인하는 결말.</p>
+<article class="piece"><div class="ph">라벨 — 《셰헤라자드》(1903)</div>
+<div class="pt">I. 아시아 (Asie)</div>
+<div class="pm">프랑스어 · 약 9분 30초</div>
+<div class="ot">Asie</div><div class="ok">「아시아」</div>
+<p>화자는 「아시아여, 아시아여, 아시아여」의 세 번 호명으로 곡을 연 뒤, 「나는 ~하고 싶다(Je voudrais)」를 열네 번 거듭합니다 — 「보고 싶다」 열한 번, 「떠나고 싶다」 두 번, 「머물고 싶다」 한 번. 다마스쿠스, 페르시아, 인도, 중국 — 동방의 모든 풍경이 한 호흡에 펼쳐집니다.</p>
+<p>미나레트, 비단 터번, 사랑으로 어두워진 눈동자, 음흉한 상인, 손가락 하나의 움직임으로 삶과 죽음을 결정하는 카디와 비지르. 만다린과 공주들, 시와 아름다움을 두고 논쟁하는 학자들. 마법의 궁전과 미소 짓는 살인자들. 그리고 마지막에는 신밧드처럼 아라비아 잔을 입술까지 들어 올리며 이야기를 잠시 끊기로 종결됩니다.</p>
+<p>사이클 중 가장 긴 곡이며, 동방을 「가본 자의 보고」가 아닌 「상상한 자의 환상」으로 그리는 결정적 순간입니다. 같은 「보고 싶다」가 열한 번 반복되지만, 라벨의 음악은 매번 다른 색채로 그 욕망을 그려냅니다.</p>
+<div class="lyr"><div class="o">Asie, Asie, Asie.<br>Vieux pays merveilleux des contes de nourrice<br>Où dort la fantaisie comme une impératrice<br>En sa forêt tout emplie de mystère.<br>Asie,<br>Je voudrais m&#x27;en aller avec la goëlette<br>Qui se berce ce soir dans le port<br>Mystérieuse et solitaire<br>Et qui déploie enfin ses voiles violettes<br>Comme un immense oiseau de nuit dans le ciel d&#x27;or.<br>Je voudrais m&#x27;en aller vers des îles de fleurs<br>En écoutant chanter la mer perverse<br>Sur un vieux rythme ensorceleur.<br>Je voudrais voir Damas et les villes de Perse<br>Avec les minarets légers dans l&#x27;air.<br>Je voudrais voir de beaux turbans de soie<br>Sur des visages noirs aux dents claires ;<br>Je voudrais voir des yeux sombres d&#x27;amour<br>Et des prunelles brillantes de joie<br>En des peaux jaunes comme des oranges ;<br>Je voudrais voir des vêtements de velours<br>Et des habits à longues franges.<br>Je voudrais voir des calumets entre des bouches<br>Tout entourées de barbe blanche ;<br>Je voudrais voir d&#x27;âpres marchands aux regards louches,<br>Et des cadis, et des vizirs<br>Qui du seul mouvement de leur doigt qui se penche<br>Accordent vie ou mort au gré de leur désir.<br>Je voudrais voir la Perse, et l&#x27;Inde, et puis la Chine,<br>Les mandarins ventrus sous les ombrelles,<br>Et les princesses aux mains fines,<br>Et les lettrés qui se querellent<br>Sur la poésie et sur la beauté ;<br>Je voudrais m&#x27;attarder au palais enchanté<br>Et comme un voyageur étranger<br>Contempler à loisir des paysages peints<br>Sur des étoffes en des cadres de sapin<br>Avec un personnage au milieu d&#x27;un verger ;<br>Je voudrais voir des assassins souriant<br>Du bourreau qui coupe un cou d&#x27;innocent<br>Avec son grand sabre courbé d&#x27;Orient.<br>Je voudrais voir des pauvres et des reines ;<br>Je voudrais voir des roses et du sang ;<br>Je voudrais voir mourir d&#x27;amour ou bien de haine.<br>Et puis m&#x27;en revenir plus tard<br>Narrer mon aventure aux curieux de rêves<br>En élevant comme Sindbad ma vieille tasse arabe<br>De temps en temps jusqu&#x27;à mes lèvres<br>Pour interrompre le conte avec art…</div><div class="k">아시아여, 아시아여, 아시아여.<br>유모의 옛이야기 속에 살아남은 경이로운 옛 땅이여,<br>환상이 한 명의 여제처럼 잠들어 있는,<br>신비로 가득 찬 그녀의 숲 속에서.<br>아시아여,<br>나는 떠나고 싶다, 저 작은 범선과 함께,<br>오늘 저녁 항구에서 흔들리고 있는 그 배,<br>신비롭고 외로운 그 배,<br>마침내 보랏빛 돛을 펼친 그 배,<br>황금빛 하늘의 거대한 밤의 새와도 같은 그 배.<br>나는 떠나고 싶다, 꽃들의 섬을 향해,<br>사악한 바다가 노래하는 것을 들으며,<br>오래된 매혹의 리듬 위에서.<br>다마스쿠스를, 그리고 페르시아의 도시들을 보고 싶다,<br>공기 속에 가벼이 떠 있는 미나레트들과 함께.<br>아름다운 비단 터번을 보고 싶다,<br>빛나는 이를 가진 검은 얼굴들 위의 그 터번을.<br>사랑으로 어두워진 눈동자들을,<br>기쁨으로 빛나는 동공들을,<br>오렌지처럼 노란 피부 속에 박힌 그 눈동자들을 보고 싶다.<br>벨벳으로 된 옷들을 보고 싶다,<br>긴 술이 달린 의상들을.<br>긴 담뱃대가 입에 물려 있는 모습을 보고 싶다,<br>흰 수염으로 둘러싸인 그 입들을.<br>음흉한 시선의 거친 상인들을 보고 싶다,<br>그리고 카디들과 비지르들을,<br>단 한 번 손가락을 굽히는 작은 동작만으로<br>삶과 죽음을 결정하는 그 사람들을.<br>페르시아를, 인도를, 그리고 그 너머의 중국을 보고 싶다,<br>양산 아래 배가 불룩 나온 만다린들과,<br>가녀린 손을 지닌 공주들과,<br>서로 논쟁을 벌이는 학자들을,<br>시에 대해, 그리고 아름다움에 대해.<br>마법에 걸린 어느 궁전에 머물러,<br>한 명의 이방인 여행객처럼,<br>여유롭게 그려진 풍경들을 응시하고 싶다,<br>전나무 액자 안의 천 위에 그려진 풍경들을,<br>과수원 한가운데에 서 있는 한 인물과 함께.<br>미소 짓는 살인자들을 보고 싶다,<br>무고한 자의 목을 베는 사형집행관을 보며,<br>동방의 휘어진 큰 검을 든 그 사람을.<br>가난한 자들과 여왕들을 보고 싶다.<br>장미들과 피를 보고 싶다.<br>사랑으로, 혹은 미움으로 죽어가는 것을 보고 싶다.<br>그러고 나서 한참 뒤에 돌아와,<br>꿈에 호기심을 품은 사람들에게 나의 모험담을 들려주고 싶다,<br>신밧드처럼 나의 오래된 아라비아 잔을 들어 올리면서,<br>이따금씩 그것을 입술까지 올리면서,<br>이야기를 기교 있게 잠시 끊어 두기 위해서…</div></div>
+</article>
+<article class="piece"><div class="ph">라벨 — 《셰헤라자드》(1903)</div>
+<div class="pt">II. 마법의 피리 (La flûte enchantée)</div>
+<div class="pm">프랑스어 · 약 4분 · 플루트 오시헌</div>
+<div class="ot">La flûte enchantée</div><div class="ok">「마법의 피리」</div>
+<p>한 노예 소녀의 깊은 밤. 그녀의 주인은 비단 모자를 쓴 채 흰 수염 속에 노란 코를 묻고 잠들어 있습니다. 그러나 소녀는 깨어 있습니다 — 바깥에서 들려오는 한 자루의 피리 소리에 귀를 기울이고 있기 때문입니다.</p>
+<p>그 피리를 부는 사람은 그녀의 연인. 슬픔과 기쁨이 번갈아 흘러나오는 곡조, 나른하고 가벼운 곡조. 그녀가 십자 모양의 창문에 다가갈 때면, 매 음표 하나하나가 마치 신비로운 입맞춤처럼 날아와 그녀의 뺨에 닿는 것 같습니다.</p>
+<p>플루트와 가창선의 대화가 이 곡의 핵심입니다. 라벨이 그린 가장 내밀한 음악적 풍경 중 하나로, 「밤의 침묵 속에서만 가능한 사랑」을 그려냅니다.</p>
+<div class="lyr"><div class="o">L&#x27;ombre est douce et mon maître dort<br>Coiffé d&#x27;un bonnet conique de soie<br>Et son long nez jaune en sa barbe blanche.<br>Mais moi, je suis éveillée encor<br>Et j&#x27;écoute au dehors<br>Une chanson de flûte où s&#x27;épanche<br>Tour à tour la tristesse ou la joie.<br>Un air tour à tour langoureux ou frivole<br>Que mon amoureux chéri joue,<br>Et quand je m&#x27;approche de la croisée<br>Il me semble que chaque note s&#x27;envole<br>De la flûte vers ma joue<br>Comme un mystérieux baiser.</div><div class="k">그늘은 부드럽고, 나의 주인은 잠들었다.<br>비단으로 만든 원뿔 모자를 쓴 채,<br>그의 길고 노란 코는 흰 수염 속에 잠겨 있다.<br>그러나 나는 아직 깨어 있다.<br>그리고 바깥의 소리에 귀를 기울인다 —<br>한 자루의 피리에서 흘러나오는 노래,<br>그 안에서 슬픔과 기쁨이 번갈아 흐른다.<br>어떤 곡조는 나른하고, 어떤 곡조는 가벼운데,<br>그것은 내 사랑하는 연인이 연주하는 것이다.<br>내가 십자창에 다가갈 때면,<br>마치 모든 음표 하나하나가<br>그 피리로부터 내 뺨을 향해 날아와 닿는 것만 같다 —<br>하나의 신비로운 입맞춤처럼.</div></div>
+</article>
+<article class="piece"><div class="ph">라벨 — 《셰헤라자드》(1903)</div>
+<div class="pt">III. 무관심한 자 (L&#x27;indifférent)</div>
+<div class="pm">프랑스어 · 약 3분 30초</div>
+<div class="ot">L&#x27;indifférent</div><div class="ok">「무관심한 자」</div>
+<p>한 젊은 이방인이 화자의 문 앞에 서서 노래합니다. 낯설고도 매혹적인 언어로 — 마치 어긋난 음악처럼. 화자는 그의 「소녀와도 같이 부드러운 눈」, 솜털이 살짝 드리운 가는 얼굴의 곡선에 매혹됩니다.</p>
+<p>화자는 그를 자기 집 안으로 부릅니다 — 「들어오라! 내 포도주가 그대를 위로하게 하라…」 그러나 그 이방인은 들어오지 않습니다. 그는 우아한 몸짓으로 마지막 인사를 보내며, 가볍게 굽힌 허리와 「여성스럽고도 지친 듯한 걸음걸이」로 그저 지나가 버립니다.</p>
+<p>이 곡의 양가성은 음악적 정조의 핵심입니다. 젊은 이방인의 성별은 명시되지 않으며, 그의 걸음걸이는 「여성적」으로 묘사됩니다. 이 모호함이 욕망의 좌절을 더욱 아련하게 만듭니다.</p>
+<div class="lyr"><div class="o">Tes yeux sont doux comme ceux d&#x27;une fille,<br>Jeune étranger,<br>Et la courbe fine<br>De ton beau visage de duvet ombragé<br>Est plus séduisante encor de ligne.<br>Ta lèvre chante sur le pas de ma porte<br>Une langue inconnue et charmante<br>Comme une musique fausse.<br>Entre ! Et que mon vin te réconforte…<br>Mais non, tu passes<br>Et de mon seuil je te vois t&#x27;éloigner<br>Me faisant un dernier geste avec grâce<br>Et la hanche légèrement ployée<br>Par ta démarche féminine et lasse…</div><div class="k">그대의 눈은 한 소녀의 눈처럼 부드럽다,<br>젊은 이방인이여,<br>그리고 그 가는 곡선,<br>솜털이 살짝 드리운 그대의 아름다운 얼굴의 그 가는 곡선은,<br>그 윤곽이 더욱 매혹적이로다.<br>그대의 입술은 내 문턱에서 노래한다,<br>낯설고도 매혹적인 한 언어를,<br>마치 어긋난 음악처럼.<br>들어오라! 내 포도주가 그대를 위로하게 하라…<br>그러나 그렇지 않다. 그대는 지나가 버린다.<br>내 문턱에 선 채, 나는 그대가 멀어져 가는 것을 본다,<br>우아한 몸짓으로 내게 마지막 인사를 보내며,<br>허리는 가볍게 굽힌 채,<br>여성스럽고도 지친 듯한 그 걸음걸이로…</div></div>
+</article>
+</section>
+<section class="comp"><h2>볼프강 아마데우스 모차르트 (Wolfgang Amadeus Mozart, 1756–1791)</h2>
+<div class="meta">징슈필 (독일어 대사 + 가창) · 3막</div>
+<div class="meta">대본: 고틀리프 슈테파니 (브레츠너의 원작에 의거)</div>
+<div class="meta">초연: 1782년 7월 16일, 빈 부르크테아터 — 황제 요제프 2세 의뢰</div>
+<p>모차르트가 26세에 빈에 정착한 직후, 황제 요제프 2세의 「독일 국립 오페라」 프로젝트의 일환으로 위촉받아 작곡한 작품입니다. 초연 직후 황제가 「음표가 너무 많네, 사랑하는 모차르트군!」이라고 했다는 일화로도 유명합니다.</p>
+<p>18세기 후반 빈은 「투르크 양식(Turquerie)」에 매료되어 있었습니다. 콘스탄티노플과 오스만 제국에 대한 유럽의 동방 환상이 음악·미술·패션을 휩쓸었지요. 본 작품은 그 양식의 음악적 정점이며, 라벨의 《셰헤라자드》가 그리는 동방 환상과 짝을 이루는 한 세기 앞선 유럽의 동방 상상입니다.</p>
+<p>주인공 콘스탄체는 스페인의 귀족 처녀입니다. 약혼자 벨몬테와의 항해 중 해적에게 납치되어, 투르크 총독 셀림 파샤의 후궁(harem)에 갇혀 있습니다. 셀림은 그녀를 사랑하지만, 그녀는 벨몬테에 대한 정절을 지킵니다. 결국 벨몬테가 그녀를 구출하러 오고, 두 사람의 사랑이 승리합니다. 작품의 핵심은 「정절(Treue)」이라는 18세기 후반 계몽주의의 미덕입니다.</p>
+<p>오늘 발췌하는 「Ach, ich liebte, war so glücklich」는 콘스탄체가 셀림의 사랑 고백을 정중히 거절하며 부르는 첫 본격 아리아입니다. 사랑의 행복(과거)과 이별의 슬픔(현재)이 한 가창자의 한 호흡 안에서 결합되는 모차르트의 콜로라투라 라멘트입니다.</p>
+<article class="piece"><div class="ph">모차르트 — 《후궁으로부터의 도주》(1782)</div>
+<div class="pt">1막 6번 · 콘스탄체</div>
+<div class="pm">독일어 · 약 5분 30초</div>
+<div class="ot">«Ach, ich liebte, war so glücklich»</div><div class="ok">「아아, 나는 사랑했었네, 그토록 행복했었네」</div>
+<p>셀림 파샤가 후궁에 갇힌 콘스탄체에게 사랑을 고백합니다. 그러나 콘스탄체는 정중히 거부하며, 약혼자 벨몬테에 대한 자신의 정절을 노래합니다.</p>
+<p>곡의 어법은 「콜로라투라 라멘트」 — 빠른 장식음과 비탄의 정조가 한 곡 안에서 결합된 양식입니다. B♭장조 Adagio로 행복했던 과거를 회고하고, Allegro에서 「Kummer(슬픔)」라는 단어 위에 장식음이 쏟아지며 g단조로 굴절합니다. 장식음이 기쁨이 아니라 슬픔의 단어에 놓인다는 점이 이 아리아의 핵심입니다.</p>
+<p>18세기 후반 콜로라투라는 기교의 과시가 아니라 「정념의 시간성」을 표현하는 어법입니다. 콘스탄체의 콜로라투라는 「행복했던 과거」가 「슬픈 현재」를 통과해 흘러가는 음악적 형상입니다.</p>
+<div class="lyr"><div class="o">Ach, ich liebte,<br>war so glücklich,<br>kannte nicht der Liebe Schmerz!<br>Schwur ihm Treue,<br>dem Geliebten,<br>gab dahin mein ganzes Herz.<br><br>Doch wie bald schwand meine Freude,<br>Trennung war mein banges Los;<br>und nun schwimmt mein Aug&#x27; in Tränen,<br>Kummer ruht in meinem Schoß.</div><div class="k">아아, 나는 사랑했었지.<br>그토록 행복했었지.<br>사랑의 고통이라곤 알지 못했지.<br>그이에게 정절을 맹세하고,<br>내가 사랑하는 그이에게<br>내 모든 마음을 다 내어주었지.<br><br>그러나 그 기쁨은 얼마나 빨리 사라졌는지.<br>이별이 내게 주어진 두려운 운명이었지.<br>이제 내 눈은 눈물에 잠기고,<br>슬픔만이 내 품 안에 머무는구나.</div></div>
+</article>
+</section>
+<section class="comp"><h2>피에트로 마스카니 (Pietro Mascagni, 1863–1945)</h2>
+<p>(Tre romanze su testi di Guido Menasci, 1904–1906)</p>
+<div class="meta">살롱 가곡 (romanza da camera) · 소프라노/테너와 피아노</div>
+<div class="meta">시: 귀도 메나시 (Guido Menasci, 1867–1925)</div>
+<p>피에트로 마스카니는 《카발레리아 루스티카나》(1890)로 베리스모 오페라의 시대를 연 작곡가로 유명합니다. 그러나 그는 오페라 외에도 여러 편의 살롱 가곡(liriche da camera)을 작곡했고, 오늘 들으실 세 곡은 그 중에서도 거의 알려지지 않은 작품들입니다.</p>
+<p>본 세 곡 — 《Ascoltiamo!》, 《Stornelli marini》, 《Spes ultima》 — 은 슈베르트의 《겨울 나그네》나 슈만의 《시인의 사랑》 같은 「연가곡」이 아닙니다. 마스카니가 1904년과 1906년에 같은 시인 메나시의 텍스트로 따로 작곡한 살롱 가곡이며, 「Tre romanze」라는 묶음은 오늘 무대를 위해 가창자가 구성한 것입니다.</p>
+<p>그럼에도 이 세 곡을 한 무대에 묶는 의미는 분명합니다. 한 작곡가가 같은 시기, 같은 시인의 텍스트로 작곡했음에도 세 곡이 보여주는 양식적 폭은 매우 넓습니다 — 사적인 친밀성(「들어보아라」), 거친 해양 민요(「바다의 노래들」), 그리고 거의 무지시어의 영적 봉헌(「마지막 희망」). 마스카니가 오페라의 격렬한 폭발 외에 어떤 사적 어법을 가지고 있었는지를 한 호흡에 보여주는 묶음입니다.</p>
+<p>시인 귀도 메나시는 리보르노 출신의 법률가이자 시인으로, 마스카니와 함께 《카발레리아 루스티카나》의 대본을 공동 집필한 인물입니다.</p>
+<article class="piece"><div class="ph">마스카니 — 《세 가곡》(1904–1906)</div>
+<div class="pt">I. 들어보아라! (Ascoltiamo!)</div>
+<div class="pm">이탈리아어 · 약 2분 20초</div>
+<div class="ot">Ascoltiamo!</div><div class="ok">「들어보아라!」</div>
+<p>연인에게 건네는 노래입니다. 한 줄기 부드러운 선율이 흘러나옵니다 — 마치 꿈이 현실로 화한 듯한 그 선율. 그 선율 안에서 두 사람의 이름이 함께 속삭여집니다.</p>
+<p>곡의 마지막에는 한 결정적 순간이 옵니다. 「저 위, 빛으로 가득 찬 광대한 하늘로부터 별들이 우리에게 응답한다 — 그러하기를!(così sia!)」 이 마지막 「così sia」는 가톨릭 미사의 「아멘」과 같은 종교적 정형구입니다. 사랑의 맹세가 종교적 봉헌의 어법으로 종결됩니다.</p>
+<p>곡 전체는 「속삭임으로 시작해 별의 응답으로 끝나는」 단계적 상승의 구조를 가집니다. 시작은 매우 작게(sottovoce), 정점에서 갑자기 다시 작게 — 별빛이 반짝이는 듯한 피아노의 꾸밈음과 함께.</p>
+<div class="lyr"><div class="o">Ascoltiamo! È una dolce melodia<br>che sembra sogno fatto realtà…<br>I nostri nomi insieme mormorati<br>in un istante di felicità!<br>Non senti, anima mia?<br>Lassù dai vasti cieli illuminati<br>ci rispondon le stelle così sia!</div><div class="k">들어보아라, 한 줄기 부드러운 선율이 흐른다 —<br>꿈이 현실로 화한 듯한 그 선율이…<br>행복의 한 순간 속에서<br>함께 속삭여진 우리 두 이름이여!<br>들리지 않느냐, 내 영혼이여?<br>저 위, 빛으로 가득 찬 광대한 하늘로부터<br>별들이 우리에게 응답한다 — 「이루어지리라!」 하고.</div></div>
+</article>
+<article class="piece"><div class="ph">마스카니 — 《세 가곡》(1904–1906)</div>
+<div class="pt">II. 바다의 노래들 (Stornelli marini)</div>
+<div class="pm">이탈리아어 · 약 1분 40초</div>
+<div class="ot">Stornelli marini</div><div class="ok">「바다의 즉흥 노래들」</div>
+<p>「Stornello(스토르넬로)」는 토스카나 지방의 짧은 민중시 형식입니다. 3행을 한 단위로 하며, 첫 행이 꽃이나 자연물을 부르는 호격으로 시작합니다. 본 곡은 「바다의(marini)」 스토르넬로 세 단위가 이어진 곡입니다 — 그래서 제목이 복수형 「Stornelli」입니다.</p>
+<p>세 stornello는 각각 다른 바다를 호명합니다. 첫째는 「은빛 바다」 — 거친 짠 입맞춤과 바람의 거친 깨물기. 둘째는 「잔잔한 바다」 — 태양 같은 그녀의 두 눈과 햇살 같은 머리타래, 그리고 그늘 사이로 모습을 드러내는 아름다운 미소. 셋째는 「깊은 바다」 — 그 물결 사이로 이따금 보이는 그녀의 푸른 두 눈과 금빛 머리채.</p>
+<p>곡 안에서 마스카니는 거친 어법(「un poco rude」)과 살롱의 섬세한 어법(「con sentimento di mistero」)을 교차시킵니다. D장조에서 F장조로 옮겨 갔다가 다시 돌아오며, 짧지만 가장 다채로운 곡입니다.</p>
+<div class="lyr"><div class="o">Mare d&#x27;argento!<br>mi sono innamorato tanto;<br>baci salati, morsi aspri del vento!<br><br>Mar di bonaccia!<br>Occhi di sole, di sole la treccia;<br>un bel sorriso tra l&#x27;ombre s&#x27;affaccia.<br><br>Mare profondo!<br>Tra l&#x27;onde tue vedo di quando in quando<br>le sue pupille azzurre, e il capo biondo.</div><div class="k">은빛으로 빛나는 바다여!<br>그토록 깊이 나는 그대에게 빠져들었네.<br>짠 입맞춤들이여, 바람의 거친 깨물기여!<br><br>잔잔한 바다여!<br>태양 같은 그녀의 두 눈, 햇살 같은 머리 타래여 —<br>그늘 사이로 한 줄기 아름다운 미소가 모습을 드러낸다.<br><br>깊고 깊은 바다여!<br>너의 물결 사이로 나는 이따금 본다,<br>그녀의 푸른 두 눈, 그리고 그 금빛 머리채를.</div></div>
+</article>
+<article class="piece"><div class="ph">마스카니 — 《세 가곡》(1904–1906)</div>
+<div class="pt">III. 마지막 희망 (Spes ultima)</div>
+<div class="pm">이탈리아어 · 약 1분 50초</div>
+<div class="ot">Spes ultima</div><div class="ok">「마지막 희망」</div>
+<p>제목 「Spes ultima」는 라틴어로 「마지막 희망」을 뜻합니다. 라틴 격언 「Spes ultima dea(희망은 마지막 [남는] 여신)」에서 가져온 것으로, 시인 메나시의 고전어 교양이 드러나는 결정점이기도 합니다.</p>
+<p>곡의 내용은 두 영혼의 결합에 대한 봉헌입니다. 함께 흘린 눈물과 함께 누린 환희가 두 영혼을 하나로 묶었다는 회상, 그리고 「가슴이 싸움에 지쳐 비로소 쉬고 입을 다물 때, 그대가 곧 나의 기도, 나의 마지막 평화의 꿈이 된다」는 봉헌.</p>
+<p>음악적으로 흥미로운 것은 마스카니가 이 곡에서 「거의 어떠한 음악적 지시도 하지 않는다」는 점입니다. 다른 곡들에 풍부한 다이내믹과 표현 지시가 이 곡에는 거의 없습니다 — 단지 「Lento(느리게)」와 곡 끝의 피아노 cresc./dim. 하나뿐. 가창자에게 텍스트의 정념을 자기 자신의 정념으로 채우도록 온전히 맡기는 결정입니다.</p>
+<div class="lyr"><div class="o">Ho con te versato lacrime,<br>ho con te sempre gioito;<br>il dolor più forte, il gaudio<br>più sereno ci hanno unito.<br><br>Quando stanco di combattere<br>il mio cuor riposa e tace,<br>la preghiera sei tu, l&#x27;ultimo<br>dolce mio sogno di pace.</div><div class="k">그대와 함께 나는 눈물을 흘렸네,<br>그대와 함께 나는 늘 기뻐했네.<br>더없이 깊은 슬픔도, 더없이 잔잔한 환희도,<br>우리 두 영혼을 하나로 묶어 왔네.<br><br>내 가슴이 싸움에 지쳐<br>비로소 쉬고 입을 다물 때면,<br>그대가 곧 나의 기도가 된다 —<br>나의 마지막, 가장 부드러운 평화의 꿈이여.</div></div>
+</article>
+</section>
+<section class="comp"><h2>프란체스코 칠레아 (Francesco Cilea, 1866–1950)</h2>
+<div class="meta">오페라 (Opera lirica) · 4막</div>
+<div class="meta">대본: 아르투로 콜라우티 — 스크리브 &amp; 르구베의 동명 희곡(1849)에서</div>
+<div class="meta">초연: 1902년 11월 6일, 밀라노 테아트로 리리코</div>
+<p>《아드리아나 르쿠브뢰르》는 베리스모 후기의 대표작입니다. 마스카니·레온카발로·푸치니와 같은 세대의 작곡가 칠레아가 1902년에 초연한 작품으로, 베리스모의 격렬한 극단을 절제하고 예술가의 자기응시를 주제로 삼은 작품입니다.</p>
+<p>주인공 아드리아나 르쿠브뢰르(Adrienne Lecouvreur, 1692–1730)는 실존 인물입니다. 18세기 초 프랑스 코메디 프랑세즈의 전설적인 비극 여배우로, 라신·코르네유의 비극을 그 시대 가장 뛰어나게 연기했던 인물입니다. 그러나 그녀의 삶은 사랑의 비극으로 막을 내립니다 — 작품 안에서 아드리아나는 작센 백작 마우리치오를 사랑하지만, 그를 두고 부용 공작부인와 삼각관계가 형성되고, 결국 공주가 보낸 독이 묻은 제비꽃 다발에 의해 죽음을 맞이합니다.</p>
+<p>오늘 부르는 아리아는 1막 첫 등장 장면입니다. 코메디 프랑세즈의 무대 뒤 — 동료 배우들이 아드리아나를 「위대한 비극 여배우」라며 칭송할 때, 그녀는 등장하여 자기 위치를 낮춥니다. 「저는 다만 창조의 정신을 섬기는 비천한 시녀일 뿐입니다」. 한 예술가가 자신의 예술 행위에 대해 발화하는 가장 응축된 자기선언으로 평가받는 아리아입니다.</p>
+<article class="piece"><div class="ph">칠레아 — 《아드리아나 르쿠브뢰르》(1902)</div>
+<div class="pt">1막 · 아드리아나</div>
+<div class="pm">이탈리아어 · 약 3분 50초</div>
+<div class="ot">«Ecco, respiro appena… Io son l&#x27;umile ancella»</div><div class="ok">「보세요, 이제 겨우 숨을 고릅니다… 저는 비천한 시녀일 뿐입니다」</div>
+<p>코메디 프랑세즈의 무대 뒤. 곧 라신의 비극이 시작될 시간입니다. 동료 배우들과 무대 감독 미쇼네가 그녀를 「위대한 비극 여배우」, 「프랑스 비극의 영혼」이라며 칭송합니다.</p>
+<p>아드리아나가 등장합니다. 그녀는 그들의 찬사를 정중히 사양하며 자기 위치를 낮춥니다 — 「저는 다만 창조의 정신을 섬기는 비천한 시녀일 뿐. 시구의 한 박자일 뿐이며, 인간 드라마의 메아리일 뿐. 손에 매인 여린 한 도구일 뿐입니다.」</p>
+<p>곡의 마지막 두 행이 결정적입니다 — 「내 목소리는 한 줄기 숨결, 내일 새벽이면 사라질 것입니다.」 예술가의 운명에 대한 음악적 응답이며, 동시에 오늘 무대에서 이 아리아를 부르는 가창자 자신의 예술 행위에 대한 메타적 봉헌으로도 들리는 순간입니다.</p>
+<div class="lyr"><div class="o">Ecco, respiro appena…<br>Io son l&#x27;umile ancella<br>del Genio creator;<br>ei m&#x27;offre la favella,<br>io la diffondo ai cor…<br><br>Del verso io son l&#x27;accento,<br>l&#x27;eco del dramma uman,<br>il fragile strumento<br>vassallo della man…<br><br>Mite, gioconda, atroce,<br>mi chiamo Fedeltà:<br>un soffio è la mia voce,<br>che al novo dì morrà.</div><div class="k">보세요, 이제 겨우 숨을 고릅니다…<br>저는 다만 비천한 한 시녀일 뿐.<br>창조의 정신을 섬기는 시녀일 뿐입니다.<br>그분이 제게 말씀을 건네 주시면,<br>저는 그 말씀을 사람들의 가슴으로 전해 드릴 따름입니다.<br><br>저는 시구의 한 박자일 뿐이며,<br>인간 드라마의 메아리일 뿐.<br>여린 한 도구일 뿐이며,<br>(작자의) 손에 매인 가신(家臣)일 뿐입니다.<br><br>온화하든, 즐겁든, 잔혹하든,<br>제 이름은 「충실함」입니다.<br>내 목소리는 한 줄기 숨결,<br>내일 새벽이면 사라질 것입니다.</div></div>
+</article>
+</section>
+<section class="comp"><h2>네드 로렘 (Ned Rorem, 1923–2022)</h2>
+<div class="meta">가곡 5곡 편찬적 묶음 · 소프라노/메조소프라노와 피아노</div>
+<div class="meta">시인: 5명 (O&#x27;Hara · Wylie · Spenser · Yeats · Rossetti)</div>
+<div class="meta">출판: Boosey &amp; Hawkes 《50 Collected Songs》</div>
+<p>Ned Rorem은 「미국 가곡의 가장 위대한 작곡가」로 평가받는 인물입니다. 그의 약 500곡에 이르는 방대한 가곡 작품 중에서, 오늘 들으실 다섯 곡은 작곡가의 청년기 4곡과 후기 1곡(1948년 25세부터 1979년 56세까지)을 가로지르며 선택된 묶음입니다.</p>
+<p>이 묶음은 본래 Rorem이 하나의 연가곡으로 작곡한 것이 아니라, 오늘 무대를 위해 가창자가 본 프로그램의 단일 주제 「여성 정념의 시대별 변형」에 맞춰 새롭게 구성한 편찬적 묶음입니다. 앞서 들으신 마스카니의 《세 가곡》과 정확히 같은 양식적 위치 — 두 묶음 모두 「연가곡이 아닌 편찬적 그룹」이라는 점에서 본 프로그램 2부의 핵심 평행 구조를 이룹니다.</p>
+<p>다섯 곡의 시인들은 약 360년의 영시의 시대 변형을 한 묶음 안에 펼쳐 보입니다 — 16세기 영국 르네상스 대표 시인 Edmund Spenser(1552/53-1599), 19세기 영국 여성 시인 Christina Rossetti(1830-1894), 19-20세기 아일랜드 노벨문학상 수상자 W. B. Yeats(1865-1939), 20세기 초 미국 여성 시인 Elinor Wylie(1885-1928), 그리고 20세기 중반 미국 New York School의 핵심 시인 Frank O&#x27;Hara(1926-1966)에 이르기까지.</p>
+<p>다섯 곡의 정념은 「역설적 고백 → 짧은 비가 → 안식의 갈망 → 유한성의 경고 → 도하의 봉인」으로 이어지며, 중간의 《What if some little pain…》이 본 프로그램의 라멘트 계열(콘스탄체 · Spes ultima)에 응답하는 안식의 노래로 놓입니다.</p>
+<article class="piece"><div class="ph">Rorem — 「다섯 가곡」 Five Songs</div>
+<div class="pt">I. I will always love you (1957) · 시: Frank O&#x27;Hara</div>
+<div class="pm">영어 · 약 2분</div>
+<div class="ot">I will always love you</div><div class="ok">「나는 영원히 그대를 사랑하리」</div>
+<p>Frank O&#x27;Hara(1926-1966)는 미국 「New York School」의 핵심 시인이며 뉴욕 현대미술관(MoMA)의 큐레이터였습니다. 추상표현주의 화가들과 가까웠고, 1966년 7월 39세에 사고로 사망했습니다. 본 시는 사후 출판된 《Collected Poems》(1971)에 수록되어 있습니다.</p>
+<p>Rorem이 1957년, 34세에 파리에서 작곡한 곡입니다. 시의 핵심 모순 — 「영원히 사랑할 것이다 / 한 번도 사랑하지 않았다」 — 이 가능성과 실현의 부재 사이의 정념을 그려냅니다.</p>
+<p>마지막 이미지가 결정적입니다 — 「열린 창문으로 불어 들어와 그대로 세상에서 사라져 버리는 눈」. 사랑의 도착과 부재가 같은 순간에 일어나는 모순이 한 음악 안에서 결합됩니다.</p>
+<div class="lyr"><div class="o">I will always love you<br>though I never loved you<br><br>a boy smelling faintly of heather<br>staring up at your window<br><br>the passion that enlightens<br>and stills and cultivates, gone<br><br>while I sought your face<br>to be familiar in the blueness<br><br>or to follow your sharp whistle<br>around a corner into my light<br><br>that was love growing fainter<br>each time you failed to appear<br><br>I spent my whole self searching<br>love which I thought was you<br><br>it was mine so briefly<br>and I never knew it, or you went<br><br>I thought it was outside<br>disappearing but it is<br><br>disappearing in my heart<br>like snow blown in a window<br><br>to be gone from the world<br>I will always love you.</div><div class="k">나는 영원히 그대를 사랑할 것이다 —<br>비록 한 번도 그대를 사랑하지 못했다 해도.<br><br>한 소년, 헤더 꽃 향기를 희미하게 풍기며,<br>그대의 창문을 올려다보던.<br><br>깨우치고, 잠재우고, 자라게 하던<br>그 정념이 사라졌다.<br><br>그대의 얼굴을 푸르름 속에서<br>익숙히 발견하려 했고,<br><br>그대의 날카로운 휘파람을 따라<br>모퉁이를 돌아 나의 빛 속으로 들어오려 했다 —<br><br>그것이 사랑이었다,<br>매번 그대가 나타나지 않을 때마다<br>점점 희미해져 가던.<br><br>나는 사랑을 찾는 데<br>내 모든 자신을 다 써버렸다 —<br>그대인 줄로만 알았던 그 사랑을.<br><br>그것은 너무도 짧은 시간 동안만 나의 것이었고,<br>나는 그것을 알지 못했다 — 혹은 그대가 떠나가 버렸다.<br><br>나는 그것이 바깥에서 사라져 가는 줄 알았는데,<br>사실은 내 마음속에서 사라져 가고 있다 —<br><br>마치 열린 창문으로 불어 들어와<br>그대로 세상에서 사라져 버리는 눈처럼.<br><br>나는 영원히 그대를 사랑할 것이다.</div></div>
+</article>
+<article class="piece"><div class="ph">Rorem — 「다섯 가곡」 Five Songs</div>
+<div class="pt">II. Little Elegy (1948) · 시: Elinor Wylie</div>
+<div class="pm">영어 · 약 1분</div>
+<div class="ot">Little Elegy</div><div class="ok">「작은 비가」</div>
+<p>Elinor Wylie(1885-1928)는 20세기 초 미국의 여성 시인입니다. 결혼 스캔들로 사회적 추방을 경험하며 살았고, 짧고 응결된 정념의 시들을 남겼습니다. 43세에 뇌졸중으로 사망했습니다. 본 시는 그녀의 사후 출판된 《Angels and Earthly Creatures: A Sequence of Sonnets》(1929)에 수록되어 있습니다.</p>
+<p>10행의 짧은 시이지만 모든 행이 부정문으로 이어집니다 — 「Without you / No rose can grow / No leaf be green...」. 「사랑이 부재할 때 모든 자연이 정지한다」는 부재의 응시. 장미, 잎새, 새, 노래 — 자연의 모든 활동이 사랑에 의존한다는 우주적 비유입니다.</p>
+<p>Rorem은 1948년 3월 28일 뉴욕에서 25세에 이 곡을 작곡했습니다. 미국 메조소프라노 Nell Tangeman에게 헌정된 작품으로, 악보 우측 하단에 「New York City, 28 March 1948 (Spring, cool, bright, noon)」이라는 작곡가 본인의 메모가 남아 있습니다. 「dolce, senza espressione」(부드럽게, 감정 없이)라는 결정적 지시어가 「사랑이 부재할 때 모든 자연이 정지한다」는 시의 정조를 감정 표현 없이 그려냅니다.</p>
+<div class="lyr"><div class="o">Without you<br>No rose can grow;<br>No leaf be green<br>If never seen<br>Your sweetest face;<br>No bird have grace<br>Or power to sing;<br>Or anything<br>Be kind, or fair,<br>And you nowhere.</div><div class="k">그대 없이는 —<br>어떤 장미도 피어날 수 없고,<br>어떤 잎새도 푸를 수 없다,<br>그대의 가장 달콤한 얼굴이<br>보이지 않는다면.<br>어떤 새도 우아할 수 없고,<br>노래할 힘조차 없다.<br>어떤 것도 다정할 수 없고,<br>아름다울 수 없다 —<br>그대가 그 어디에도 없는 곳에서는.</div></div>
+</article>
+<article class="piece"><div class="ph">Rorem — 「다섯 가곡」 Five Songs</div>
+<div class="pt">III. What if some little pain… (1949) · 시: Edmund Spenser (1552/53–1599)</div>
+<div class="pm">영어 · 약 1분 50초</div>
+<div class="ot">What if some little pain…<br>「어떤 작은 고통이 있다 한들…」</div>
+<p>본 묶음의 중심 정점입니다. Edmund Spenser(1552/53-1599)는 영국 르네상스의 대표 시인으로 《The Faerie Queene》(1590-96)의 저자입니다. 셰익스피어 이전 세대의 서정·서사 통합 실험자로 「Spenserian stanza」(9행)를 창시했고, Milton·Keats·Tennyson이 자신들의 스승으로 꼽는 시인입니다.</p>
+<p>본 텍스트는 《The Faerie Queene》 I권 Canto IX 「Cave of Despair」 에피소드의 40절입니다. 「절망(Despair)」이라는 알레고리적 인물이 기사 Redcrosse에게 죽음의 안식을 권하는 대목으로, 서사는 이 유혹을 거부합니다. 로렘은 이 연설을 서사에서 떼어내어 독립된 서정시로 설정했습니다.</p>
+<p>Rorem이 1949년 12월 20일 모로코 페즈에서 26세에 작곡한 곡입니다(악보 말미: Fez, Morocco, 20 December 1949). Lento(♩=52), 20마디. mp로 시작한 노래는 「Sleep after toil」에서 ff의 정점에 이르고, 이어지는 「port after stormy seas」 f, 「Ease after war」 mf, 「death after life」 mp로 단계적으로 내려가 pp, ppp로 닫힙니다. 가장 크게 울리는 것은 「잠」이고 「죽음」은 가장 여린 자리에 놓입니다. 본 연주는 이 곡을 죽음의 긍정이 아니라 수고로운 삶 이후의 안식에 대한 갈망으로 읽으며, 콘스탄체·《Spes ultima》에 이어지는 라멘트 계열의 셋째 곡으로 놓습니다.</p>
+<div class="lyr"><div class="o">What if some little pain the passage have,<br>That makes frail flesh to fear the bitter wave?<br>Is not short pain well borne, that brings long ease,<br>And lays the soul to sleep in quiet grave?<br>Sleep after toil, port after stormy seas,<br>Ease after war, death after life does greatly please.</div><div class="k">어떤 작은 고통이 그 길목에 있다 한들 어떠하랴,<br>가녀린 육신이 쓰라린 물결을 두려워하게 만드는 그 고통이?<br>긴 안식을 가져다주는 짧은 고통이라면 견딜 만하지 않은가,<br>영혼을 고요한 무덤에 눕혀 잠들게 하는 그 고통이라면?<br>수고 뒤의 잠, 폭풍의 바다 뒤의 항구,<br>전쟁 뒤의 안식, 삶 뒤의 죽음은 크나큰 기쁨이니.</div></div>
+</article>
+<article class="piece"><div class="ph">Rorem — 「다섯 가곡」 Five Songs</div>
+<div class="pt">IV. O Do Not Love Too Long · 시: W. B. Yeats</div>
+<div class="pm">영어 · 약 1분 30초</div>
+<div class="ot">O Do Not Love Too Long</div><div class="ok">「오, 너무 오래 사랑하지 말라」</div>
+<p>W. B. Yeats(1865-1939)는 아일랜드의 시인이자 극작가로, 1923년 노벨문학상을 수상했습니다. 20세기 영시의 가장 위대한 시인 중 한 명으로 평가받습니다. 본 시는 그의 시집 《In the Seven Woods》(1904)에 수록된 짧은 12행 시입니다.</p>
+<p>Yeats의 평생의 짝사랑 Maud Gonne이 정신적 배경에 있습니다. 1903년 그녀가 John MacBride와 결혼한 사건이 시의 결정적 응결점인 「But O, in a minute she changed」(그러나 아아, 한순간에 그녀는 변해 버렸다)로 화하여 있습니다.</p>
+<p>Rorem이 1951년 4월 20일 모로코 마라케시에서 28세에 작곡한 곡입니다. 시의 핵심은 「너무 오래 사랑하면 옛 노래처럼 유행에서 밀려난다」는 경고입니다. 「그러나 아아, 한순간에 그녀는 변해 버렸다」 — 화자는 버림받은 자이며, 자기 경험을 근거로 상대에게 경고합니다. Molto lento, 13마디. 피아노는 지속음과 단선율에 가깝게 비워져 있습니다.</p>
+<div class="lyr"><div class="o">Sweetheart, do not love too long:<br>I loved long and long,<br>And grew to be out of fashion<br>Like an old song.<br><br>All through the years of our youth<br>Neither could have known<br>Their own thought from the other&#x27;s,<br>We were so much at one.<br><br>But O, in a minute she changed —<br>O do not love too long,<br>Or you will grow out of fashion<br>Like an old song.</div><div class="k">사랑하는 이여, 너무 오래 사랑하지는 말라 —<br>나는 오래도록, 오래도록 사랑했고,<br>그러다 옛 노래처럼<br>시대에 뒤떨어진 사람이 되어 버렸다.<br><br>우리 청춘의 모든 시간 동안,<br>누구도 자신의 생각이 어디서 끝나고<br>상대의 생각이 어디서 시작되는지 알지 못했다 —<br>우리는 그토록 하나였기에.<br><br>그러나 아아, 한순간에 그녀는 변해 버렸다 —<br>오, 너무 오래 사랑하지는 말라.<br>그렇지 않으면 그대도 옛 노래처럼<br>시대에 뒤떨어진 사람이 되어 버릴 것이다.</div></div>
+</article>
+<article class="piece"><div class="ph">Rorem — 「다섯 가곡」 Five Songs</div>
+<div class="pt">V. Ferry me across the water (1978–79) · 시: Christina Rossetti</div>
+<div class="pm">영어 · 약 1분</div>
+<div class="ot">Ferry me across the water</div><div class="ok">「나를 저 물 건너로 데려다 주오」</div>
+<p>Christina Rossetti(1830-1894)는 영국 빅토리아 시대의 가장 중요한 여성 시인 중 한 명입니다. Pre-Raphaelite Brotherhood 시인 Dante Gabriel Rossetti의 여동생이며, 평생 미혼으로 종교에 헌신하며 살았습니다. 본 시는 그녀의 어린이 시집 《Sing-Song: A Nursery Rhyme Book》(1872)에 수록되어 있습니다.</p>
+<p>표면적으로는 손님과 뱃사공의 친근한 대화체 어린이 노래이지만, 깊은 층위에서는 「Charon(카론)의 강 건너기」 — 그리스 신화에서 죽은 자가 페리(스틱스 강의 뱃사공 카론)에게 한 푼을 지불해 저승으로 건너간다는 죽음의 도하 신화가 응결되어 있습니다.</p>
+<p>《The Nantucket Songs》(1978년 11월–1979년 5월 작곡, 1981년 출판)의 아홉 번째 곡입니다. C♯장조(♯ 7개)의 밝은 조성이지만 「Very very languorous」(매우 매우 나른하게) ♩=48의 느린 박절로, 어린이 노래의 가벼움 아래 도하의 무게를 실습니다. 악보의 가사에 큰따옴표가 붙어 있어 손님과 뱃사공 두 목소리를 가창자가 나누어 부르게 되어 있습니다. 온음표의 블록 화음 위에서 pp로 시작해 ppp로 끝나며, 마지막 음이 세 마디에 걸쳐 지속됩니다.</p>
+<div class="lyr"><div class="o">&quot;Ferry me across the water,<br>Do, boatman, do.&quot;<br><br>&quot;If you&#x27;ve a penny in your purse<br>I&#x27;ll ferry you.&quot;<br><br>&quot;I have a penny in my purse,<br>And my eyes are blue;<br>So ferry me across the water,<br>Do, boatman, do.&quot;<br><br>&quot;Step into my ferry-boat,<br>Be they black or blue,<br>And for the penny in your purse<br>I&#x27;ll ferry you.&quot;</div><div class="k">&quot;저 물을 건너게 해주세요,<br>부디, 뱃사공님, 부디.&quot;<br><br>&quot;네 지갑 속에 한 푼이라도 들어 있다면,<br>내가 너를 건너게 해주마.&quot;<br><br>&quot;제 지갑 속엔 한 푼이 있어요,<br>그리고 제 두 눈은 푸른빛이지요.<br>그러니 저 물을 건너게 해주세요,<br>부디, 뱃사공님, 부디.&quot;<br><br>&quot;내 거룻배에 발을 들여놓아라.<br>그 눈이 검든 푸르든 상관없이,<br>네 지갑 속의 그 한 푼을 받고<br>내가 너를 건너게 해주마.&quot;</div></div>
+</article>
+</section>
+<section class="comp"><h2>요한 슈트라우스 2세 (Johann Strauss II, 1825–1899)</h2>
+<div class="meta">빈 오페레타 (Operette) · 3막</div>
+<div class="meta">대본: 카를 하프너 &amp; 리하르트 게네 — 메이악 &amp; 알레비의 《르 레베이용》에서</div>
+<div class="meta">초연: 1874년 4월 5일, 빈 테아터 안 데어 빈</div>
+<p>《박쥐》는 빈 오페레타 황금기의 결정적 작품입니다. 「왈츠의 왕」 요한 슈트라우스 2세가 작곡한 가장 유명한 오페레타로, 19세기 후반 빈 부르주아 사회의 사교 문화와 그 위선을 음악극으로 풍자합니다.</p>
+<p>줄거리는 한 부르주아의 위장과 그 결과로 인한 코믹한 혼란입니다. 아이젠슈타인이 사소한 일로 단기 수감되어야 하는 날, 친구 팔케 박사가 그를 오를로프스키 공의 화려한 가장무도회로 유혹합니다. 동시에 아이젠슈타인의 부인 로잘린데도 옛 연인 알프레드와 만나고, 또 그 무도회에 「헝가리 백작부인」으로 변장하여 등장합니다. 모두가 가면을 쓴 채 서로를 알아보지 못하는 빈 특유의 코미디입니다.</p>
+<p>오늘 부르는 차르다시 「Klänge der Heimat(고향의 음향)」은 본 작품의 가장 유명한 가창 부분입니다. 로잘린데가 헝가리 백작부인으로 변장하고 등장하자, 다른 손님들이 그녀의 정체를 의심합니다. 그녀는 「내가 진짜 헝가리인인지 차르다시로 증명하겠다」며 헝가리 민속 양식의 노래를 부릅니다.</p>
+<p>차르다시는 헝가리 민속 무곡의 양식으로 「Lassú(라수, 느린 도입부)」와 「Friss(프리스, 빠른 본부)」의 2부 구조를 갖습니다. 본 곡도 같은 구조 — 향수의 발화에서 환희의 폭발로. 후반부의 콜로라투라는 오늘 프로그램 전체에서 가장 화려한 비르투오시티의 결정점입니다. 모든 진지함을 마지막에 극장적 거짓의 액자 안으로 한 번 더 흡수시키며 끝나는 결말입니다.</p>
+<article class="piece"><div class="ph">요한 슈트라우스 2세 — 《박쥐》(1874)</div>
+<div class="pt">2막 10번 · 차르다시 · 로잘린데</div>
+<div class="pm">독일어 · 약 6분</div>
+<div class="ot">Csárdás «Klänge der Heimat»</div>
+<p>오를로프스키 공의 화려한 가장무도회. 사람들은 모두 가면을 쓰고 있고, 누가 누구인지 분간할 수 없습니다. 로잘린데가 「헝가리 백작부인」으로 변장하고 등장합니다. 그녀는 사실 빈 부르주아 아이젠슈타인의 부인이지만, 누구에게도 들키지 않으려 합니다.</p>
+<p>다른 손님들이 그녀의 정체를 의심하기 시작합니다. 그녀는 결정적인 한 수를 둡니다 — 「내가 진짜 헝가리인인지 차르다시로 증명하겠다」. 그리고 헝가리 민속 무곡인 차르다시를 부릅니다.</p>
+<p>곡은 두 부분입니다. 「라수(Lassú)」 — 느리고 향수에 찬 도입부. 그녀는 「고향 헝가리」를 그리워하며 눈물을 부릅니다. 그 다음 「프리스(Friss)」 — 빠르고 환희에 찬 본부. 불꽃과 삶의 욕망이 「진정한 헝가리인의 가슴」을 부풀게 하고, 토카이 포도주의 잔이 손에서 손으로 빠르게 돕니다. 그러나 모든 것이 가짜입니다 — 그녀는 진짜 헝가리인이 아니고, 이 차르다시도 그저 연기일 뿐입니다.</p>
+<div class="lyr"><div class="o">[Lassú]<br>Klänge der Heimat, ihr weckt mir das Sehnen,<br>rufet die Tränen ins Auge mir!<br>Wenn ich euch höre, ihr heimischen Lieder,<br>zieht mich&#x27;s wieder, mein Ungarland, zu dir!<br>O Heimat, so wunderbar,<br>wie strahlt dort die Sonne so klar!<br>Wie grün deine Wälder,<br>wie lachend die Felder,<br>o Land, wo so glücklich ich war!<br><br>Ja, dein geliebtes Bild<br>meine Seele so ganz erfüllt,<br>und bin ich auch von dir weit, ach weit,<br>dir bleibt in Ewigkeit<br>doch mein Sinn immerdar<br>ganz allein geweiht!<br><br>[Friss]<br>Feuer, Lebenslust,<br>schwellt echte Ungarbrust,<br>Hei, zum Tanze schnell,<br>Csárdás tönt so hell!<br>Braunes Mägdelein,<br>musst meine Tänzerin sein;<br>Reich den Arm geschwind,<br>dunkeläugig Kind!<br><br>Durst&#x27;ge Zecher, greift zum Becher,<br>lasst ihn kreisen, lasst ihn kreisen<br>schnell von Hand zu Hand!<br>Schlürft das Feuer im Tokayer,<br>bringt ein Hoch dem Vaterland! Ha!<br><br>Feuer, Lebenslust,<br>schwellt echte Ungarbrust,<br>Hei, zum Tanze schnell!<br>Csárdás tönt so hell!<br>La la la la la…</div><div class="k">[라수]<br>고향의 음향이여, 그대들은 내 안의 그리움을 깨우고,<br>내 눈에 눈물을 부르는구나.<br>고향의 노래여, 그대들의 소리를 들을 때면,<br>내 헝가리 땅이여, 다시 그대에게로 나는 끌려가노라.<br>오 고향이여, 그토록 경이로운 곳,<br>그곳의 태양은 얼마나 청명하게 빛나는가!<br>그대의 숲은 얼마나 푸르고,<br>그대의 들판은 얼마나 웃고 있는가,<br>오 그토록 행복했던 내 땅이여!<br><br>그래, 그대의 사랑스러운 모습이<br>내 영혼을 온전히 채우는구나.<br>비록 내가 그대에게서 멀리, 아아 멀리 떨어져 있을지라도,<br>영원토록 내 마음은<br>오직 그대에게로만<br>바쳐져 있으리라!<br><br>[프리스]<br>불꽃이여, 삶의 환희여,<br>진정한 헝가리인의 가슴을 부풀게 하고,<br>자, 어서 춤을 추자,<br>차르다시가 이토록 청량하게 울리는데!<br>갈색 머리 처녀여,<br>너는 나의 춤꾼이 되어야 한다.<br>어서 팔을 내밀어라,<br>검은 눈동자의 아이여!<br><br>목마른 술꾼들이여, 어서 잔을 들고,<br>잔을 돌려라, 잔을 돌려라,<br>손에서 손으로 빠르게!<br>토카이의 불꽃을 들이켜고,<br>조국을 위해 만세를 외쳐라! 하!<br><br>불꽃이여, 삶의 환희여,<br>진정한 헝가리인의 가슴을 부풀게 하고,<br>자, 어서 춤을 추자!<br>차르다시가 이토록 청량하게 울리는데!<br>라 라 라 라 라…</div></div>
+</article>
+</section>
+<footer>Soprano Ha-Jeong Kim · Master's Graduation Recital<br>Changwon National University · Department of Music</footer>
+</div></body></html>
